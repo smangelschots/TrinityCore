@@ -1,0 +1,14 @@
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\obj\Debug\netcoreapp2.2\TrinityCore.MsSql.csprojAssemblyReference.cache
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\obj\Debug\netcoreapp2.2\TrinityCore.MsSql.csproj.CoreCompileInputs.cache
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\obj\Debug\netcoreapp2.2\TrinityCore.MsSql.AssemblyInfoInputs.cache
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\obj\Debug\netcoreapp2.2\TrinityCore.MsSql.AssemblyInfo.cs
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\bin\Debug\netcoreapp2.2\TrinityCore.MsSql.deps.json
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\bin\Debug\netcoreapp2.2\TrinityCore.MsSql.dll
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\bin\Debug\netcoreapp2.2\System.Data.SqlClient.dll
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\bin\Debug\netcoreapp2.2\TrinityCore.dll
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\bin\Debug\netcoreapp2.2\TrinityCore.pdb
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\bin\Debug\netcoreapp2.2\System.Data.SqlClient.xml
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\obj\Debug\netcoreapp2.2\TrinityCore.MsSql.csproj.CopyComplete
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\bin\Debug\netcoreapp2.2\TrinityCore.MsSql.pdb
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\obj\Debug\netcoreapp2.2\TrinityCore.MsSql.dll
+C:\VS\GitHub\TrinityCore\TrinityCore.MsSql\obj\Debug\netcoreapp2.2\TrinityCore.MsSql.pdb
