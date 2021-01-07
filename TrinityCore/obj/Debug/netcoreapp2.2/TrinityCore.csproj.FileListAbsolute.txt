@@ -1,8 +1,0 @@
-C:\VS\GitHub\TrinityCore\TrinityCore\obj\Debug\netcoreapp2.2\TrinityCore.csproj.CoreCompileInputs.cache
-C:\VS\GitHub\TrinityCore\TrinityCore\obj\Debug\netcoreapp2.2\TrinityCore.AssemblyInfoInputs.cache
-C:\VS\GitHub\TrinityCore\TrinityCore\obj\Debug\netcoreapp2.2\TrinityCore.AssemblyInfo.cs
-C:\VS\GitHub\TrinityCore\TrinityCore\bin\Debug\netcoreapp2.2\TrinityCore.deps.json
-C:\VS\GitHub\TrinityCore\TrinityCore\bin\Debug\netcoreapp2.2\TrinityCore.dll
-C:\VS\GitHub\TrinityCore\TrinityCore\bin\Debug\netcoreapp2.2\TrinityCore.pdb
-C:\VS\GitHub\TrinityCore\TrinityCore\obj\Debug\netcoreapp2.2\TrinityCore.dll
-C:\VS\GitHub\TrinityCore\TrinityCore\obj\Debug\netcoreapp2.2\TrinityCore.pdb

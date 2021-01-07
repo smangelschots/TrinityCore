@@ -1,0 +1,9 @@
+C:\VS\GitHub\TrinityCore\Trinity.MongoDb\bin\Debug\netcoreapp3.1\Trinity.MongoDb.deps.json
+C:\VS\GitHub\TrinityCore\Trinity.MongoDb\bin\Debug\netcoreapp3.1\Trinity.MongoDb.dll
+C:\VS\GitHub\TrinityCore\Trinity.MongoDb\bin\Debug\netcoreapp3.1\Trinity.MongoDb.pdb
+C:\VS\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\netcoreapp3.1\Trinity.MongoDb.csprojAssemblyReference.cache
+C:\VS\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\netcoreapp3.1\Trinity.MongoDb.AssemblyInfoInputs.cache
+C:\VS\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\netcoreapp3.1\Trinity.MongoDb.AssemblyInfo.cs
+C:\VS\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\netcoreapp3.1\Trinity.MongoDb.csproj.CoreCompileInputs.cache
+C:\VS\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\netcoreapp3.1\Trinity.MongoDb.dll
+C:\VS\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\netcoreapp3.1\Trinity.MongoDb.pdb

@@ -1,0 +1,12 @@
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\netcoreapp3.1\Trinity.SqlServer.deps.json
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\netcoreapp3.1\Trinity.SqlServer.dll
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\netcoreapp3.1\Trinity.SqlServer.pdb
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\netcoreapp3.1\Trinity.DataAccess.dll
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\netcoreapp3.1\Trinity.DataAccess.pdb
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\netcoreapp3.1\Trinity.SqlServer.csprojAssemblyReference.cache
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\netcoreapp3.1\Trinity.SqlServer.AssemblyInfoInputs.cache
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\netcoreapp3.1\Trinity.SqlServer.AssemblyInfo.cs
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\netcoreapp3.1\Trinity.SqlServer.csproj.CoreCompileInputs.cache
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\netcoreapp3.1\Trinity.SqlServer.csproj.CopyComplete
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\netcoreapp3.1\Trinity.SqlServer.dll
+C:\VS\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\netcoreapp3.1\Trinity.SqlServer.pdb
