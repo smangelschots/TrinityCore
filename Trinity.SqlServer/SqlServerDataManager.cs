@@ -46,6 +46,11 @@ namespace Trinity.SqlServer
             TableMapFromDatabase = true;
         }
 
+        public void CreateDatabaseIfNotExist()
+        {
+
+        }
+
         public IDataCommand CreateUpdateTable(TableMap tableMap)
         {
 

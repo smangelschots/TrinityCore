@@ -9,12 +9,9 @@ namespace Trinity.Test
 {
     public class Tests
     {
-
-
         private string testTableName = "TestTable";
         private string connection = "Server=localhost;Database=Trinity;Trusted_Connection=yes; Application Name=Trinity;";
         private SqlServerDataContext dataContext;
-
         public class TestTableNoMap
         {
             public Guid Id { get; set; }
@@ -43,24 +40,17 @@ namespace Trinity.Test
         {
             var manager = new SqlServerDataManager<DataTable>(connection);
 
-            manager.CreateUpdateTable(manager.CreateTableMap<SqlColumnMap>("TestCreateTable").MapColumn("id", "Id", (e) =>
-            {
+            manager.CreateDatabaseIfNotExist();
+
+            manager.CreateUpdateTable(manager.CreateTableMap<SqlColumnMap>("TestCreateTable")
+            .MapColumn("id", "Id", (e) =>{
                 e.DbType = SqlDbType.UniqueIdentifier;
-                e.IsPrimaryKey = true;
-            }).MapColumn("Name", "Name", (e) => {
+                e.IsPrimaryKey = true;})
+            .MapColumn("Name", "Name", (e) => {
                 e.DbType = SqlDbType.NVarChar;
                 e.Size = 255;
-            })
-);
-
-
-
-
+            }));
             manager.Execute();
-
-
-
-
             Assert.Pass();
         }
 
