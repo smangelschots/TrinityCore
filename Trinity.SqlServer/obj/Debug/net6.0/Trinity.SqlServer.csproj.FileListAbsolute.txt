@@ -1,0 +1,15 @@
+C:\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\net6.0\Trinity.SqlServer.deps.json
+C:\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\net6.0\Trinity.SqlServer.dll
+C:\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\net6.0\Trinity.SqlServer.pdb
+C:\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\net6.0\Trinity.DataAccess.dll
+C:\GitHub\TrinityCore\Trinity.SqlServer\bin\Debug\net6.0\Trinity.DataAccess.pdb
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\Trinity.SqlServer.csproj.AssemblyReference.cache
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\Trinity.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\Trinity.SqlServer.AssemblyInfoInputs.cache
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\Trinity.SqlServer.AssemblyInfo.cs
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\Trinity.SqlServer.csproj.CoreCompileInputs.cache
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\Trinity.SqlServer.csproj.CopyComplete
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\Trinity.SqlServer.dll
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\refint\Trinity.SqlServer.dll
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\Trinity.SqlServer.pdb
+C:\GitHub\TrinityCore\Trinity.SqlServer\obj\Debug\net6.0\ref\Trinity.SqlServer.dll

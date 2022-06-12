@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Trinity.Test
+build_property.ProjectDir = C:\GitHub\TrinityCore\Trinity.DataAccess.Test\

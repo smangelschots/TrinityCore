@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jUHC6b0eTtkHXqXjztJQYdsuEKw+zlQkom2GvCGA0l/IQJ+Qdc6cW2NKr4fBBXrn81RckEs5uf1Hp2lOtD/3GQ==",
+  "dgSpecHash": "5gEcrwW8UTL/wqH33kRuTvC8ifwAdVyHiTfwe7LxVgguRjJkDUkjkwAXrevimwucxJYv5CaFvPzg+kcGgcHREQ==",
   "success": true,
-  "projectFilePath": "C:\\VS\\GitHub\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
+  "projectFilePath": "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

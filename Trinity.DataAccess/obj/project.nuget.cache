@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7WHl3eDz1ofKYfguM0wQCR5USUBiJDLUnZFi5y2dbu74tx0Rv4qANXsSWadPq2V9gIXSzATfuZWBq0nk+hgmXg==",
+  "dgSpecHash": "b2bNdSIZOCiXJ0tbOlvA7DxsGtEhseEBHQubtblw4MCemHMAC/yRp3GaxPBtWLCZrQe5pEn4btECdzYQjMDscA==",
   "success": true,
-  "projectFilePath": "C:\\VS\\GitHub\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj",
+  "projectFilePath": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

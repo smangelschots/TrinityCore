@@ -141,8 +141,6 @@ namespace Trinity.Test
         public void DataInsertTest()
         {
             var manager = new SqlServerDataManager<TestTableNoMap>(connection);
-
-
             for (int i = 0; i < 100; i++)
             {
                 var command = manager.Insert(new TestTableNoMap()

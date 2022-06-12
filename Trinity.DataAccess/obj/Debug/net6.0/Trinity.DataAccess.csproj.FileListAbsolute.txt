@@ -1,0 +1,12 @@
+C:\GitHub\TrinityCore\Trinity.DataAccess\bin\Debug\net6.0\Trinity.DataAccess.deps.json
+C:\GitHub\TrinityCore\Trinity.DataAccess\bin\Debug\net6.0\Trinity.DataAccess.dll
+C:\GitHub\TrinityCore\Trinity.DataAccess\bin\Debug\net6.0\Trinity.DataAccess.pdb
+C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.csproj.AssemblyReference.cache
+C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.AssemblyInfoInputs.cache
+C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.AssemblyInfo.cs
+C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.csproj.CoreCompileInputs.cache
+C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.dll
+C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\refint\Trinity.DataAccess.dll
+C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.pdb
+C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\ref\Trinity.DataAccess.dll
