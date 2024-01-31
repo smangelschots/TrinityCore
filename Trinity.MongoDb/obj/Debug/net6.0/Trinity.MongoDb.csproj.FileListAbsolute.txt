@@ -10,3 +10,15 @@ C:\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\Trinity.MongoDb.dll
 C:\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\refint\Trinity.MongoDb.dll
 C:\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\Trinity.MongoDb.pdb
 C:\GitHub\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\ref\Trinity.MongoDb.dll
+H:\Github\TrinityCore\Trinity.MongoDb\bin\Debug\net6.0\Trinity.MongoDb.deps.json
+H:\Github\TrinityCore\Trinity.MongoDb\bin\Debug\net6.0\Trinity.MongoDb.dll
+H:\Github\TrinityCore\Trinity.MongoDb\bin\Debug\net6.0\Trinity.MongoDb.pdb
+H:\Github\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\Trinity.MongoDb.csproj.AssemblyReference.cache
+H:\Github\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\Trinity.MongoDb.GeneratedMSBuildEditorConfig.editorconfig
+H:\Github\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\Trinity.MongoDb.AssemblyInfoInputs.cache
+H:\Github\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\Trinity.MongoDb.AssemblyInfo.cs
+H:\Github\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\Trinity.MongoDb.csproj.CoreCompileInputs.cache
+H:\Github\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\Trinity.MongoDb.dll
+H:\Github\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\refint\Trinity.MongoDb.dll
+H:\Github\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\Trinity.MongoDb.pdb
+H:\Github\TrinityCore\Trinity.MongoDb\obj\Debug\net6.0\ref\Trinity.MongoDb.dll

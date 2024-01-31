@@ -36,14 +36,5 @@ namespace Trinity.DataAccess.Collections
             }
             return false;
         }
-
-
-        private string IsValidDate(int day, int month, int year)
-        {
-            if (month < 1 || month > 12) return "Month";
-            if (day < 1 || day > DateTime.DaysInMonth(year, month)) return "Day";
-            if (year < 1980 || year > 2010) return "Year";
-            return "";
-        }
     }
 }

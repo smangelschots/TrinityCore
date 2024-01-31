@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P0FqBHl0P0l537031/WREomZ7WsV9SFUml1VORWkH1f0nKlSoFg9WamqtdSySbhfGbB7tCQ/rWZ6RptfgMeGIA==",
+  "dgSpecHash": "RVnHep75vq0SUo1qGD/PH8lk0Ng2jtjShAf821MDVfkxg9DMgQ5zErKOZIPpdtXL6VxLVuPG4E2pqi46AEKqvA==",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj",
+  "projectFilePath": "H:\\Github\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

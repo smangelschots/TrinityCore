@@ -10,3 +10,15 @@ C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.dll
 C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\refint\Trinity.DataAccess.dll
 C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.pdb
 C:\GitHub\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\ref\Trinity.DataAccess.dll
+H:\Github\TrinityCore\Trinity.DataAccess\bin\Debug\net6.0\Trinity.DataAccess.deps.json
+H:\Github\TrinityCore\Trinity.DataAccess\bin\Debug\net6.0\Trinity.DataAccess.dll
+H:\Github\TrinityCore\Trinity.DataAccess\bin\Debug\net6.0\Trinity.DataAccess.pdb
+H:\Github\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.csproj.AssemblyReference.cache
+H:\Github\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+H:\Github\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.AssemblyInfoInputs.cache
+H:\Github\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.AssemblyInfo.cs
+H:\Github\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.csproj.CoreCompileInputs.cache
+H:\Github\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.dll
+H:\Github\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\refint\Trinity.DataAccess.dll
+H:\Github\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\Trinity.DataAccess.pdb
+H:\Github\TrinityCore\Trinity.DataAccess\obj\Debug\net6.0\ref\Trinity.DataAccess.dll

@@ -5,8 +5,6 @@ namespace Trinity.DataAccess.Events
 {
     public class AfterSaveEventArgs  : EventArgs
     {
-
-
         public ResultList Results { get; set; }
 
     }

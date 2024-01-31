@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C59/bY8yjvlRz0iREoboAonnKtl6VbC9bs4GA8Ry4rBWqWmNBWRhrqWoNshA3eXcGTLmXJ+OoXHwRf5NyXf4bQ==",
+  "dgSpecHash": "4yyXlQ+MyvbEGFXQMz1oS34gYE4Fnznv2oVK02b2D0Lu4Dc1r54qjIWhNE4OeC1nvOwmZWsmJg8tdbRiYYiXwg==",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj",
+  "projectFilePath": "H:\\Github\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
