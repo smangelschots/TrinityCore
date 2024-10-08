@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using Trinity.DataAccess.Extentions;
 using Trinity.DataAccess.Interfaces;
 using Trinity.DataAccess.Logging;
 using Trinity.DataAccess.Orm;

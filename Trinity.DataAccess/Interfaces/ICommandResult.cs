@@ -18,6 +18,7 @@ namespace Trinity.DataAccess.Interfaces
         long ElapsedMilliseconds { get; set; }
         void AddMessage(string message);
 
+        void AddWaring(string message, Exception ex = null);
         bool IsMapped { get;  }
 
 

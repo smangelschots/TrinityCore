@@ -11,6 +11,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Trinity.DataAccess;
 using Trinity.DataAccess.Events;
+using Trinity.DataAccess.Extentions;
 using Trinity.DataAccess.Interfaces;
 using Trinity.DataAccess.Logging;
 using Trinity.DataAccess.Models;
@@ -230,7 +231,7 @@ namespace Trinity.SqlServer
                     }
                 }
 
-                OnBeforeCommandExecute(this, new ModelCommandBeforeExecuteEventArgs(dataCommand,command, DataCommandType.Update));
+                OnBeforeCommandExecute(this, new ModelCommandBeforeExecuteEventArgs(dataCommand, command, DataCommandType.Update));
 
                 if (dataCommand.Columns.Count > 0 && dataCommand.Changes.Count > 0)
                 {
@@ -351,7 +352,7 @@ namespace Trinity.SqlServer
 
             using (var dataReader = command.ExecuteReader())
             {
-                
+
 
                 result.RecordsAffected = dataReader.RecordsAffected;
                 if (dataReader.RecordsAffected == 0)
@@ -409,7 +410,7 @@ namespace Trinity.SqlServer
                 using (SqlDataReader r = await sqlCommand.ExecuteReaderAsync())
                 {
 
-                   
+
                     Type objectType = typeof(T);
 
                     if (objectType == typeof(DataTable))
@@ -541,7 +542,7 @@ namespace Trinity.SqlServer
                 var map = dataCommand.GetTableMap();
                 if (dataCommand.SelectAll == false)
                 {
-                   
+
                     if (!string.IsNullOrEmpty(map))
                     {
                         var columns = dataCommand.GetColumnAttributes();
@@ -580,7 +581,7 @@ namespace Trinity.SqlServer
                 OnBeforeCommandExecute(this, new ModelCommandBeforeExecuteEventArgs(dataCommand, command, DataCommandType.Select));
                 using (SqlDataReader r = command.ExecuteReader() as SqlDataReader)
                 {
-               
+
                     Type objectType = typeof(T);
 
                     if (objectType == typeof(DataTable))
@@ -602,8 +603,8 @@ namespace Trinity.SqlServer
                                 {
                                     if (item.ColumnName == column.ColumnName)
                                     {
-                                        if(!string.IsNullOrEmpty(item.PropertyName))
-                                            if(item.IsMapped)
+                                        if (!string.IsNullOrEmpty(item.PropertyName))
+                                            if (item.IsMapped)
                                                 column.ColumnName = item.PropertyName;
                                     }
                                 }
@@ -672,79 +673,25 @@ namespace Trinity.SqlServer
 
                                         if (column != null)
                                         {
-                                            if (!string.IsNullOrEmpty(column.PropertyName))
+                                            try
                                             {
-                                                try
-                                                {
-                                                    if (value != DBNull.Value)
-                                                        accessor[newObject, column.PropertyName] = value;
-                                                }
-                                                catch (Exception e)
-                                                {
-                                                    try
-                                                    {
-                                                        if (value != DBNull.Value)
-                                                        {
-                                                            var prop = objectType.GetProperty(column.PropertyName);
-                                                            accessor[newObject, column.PropertyName] = value.ConvertValue(prop);
-
-                                                        }
-                                                    }
-                                                    catch (Exception exception)
-                                                    {
-
-                                                        var prop = objectType.GetProperty(column.PropertyName);
-                                                        if (prop != null)
-                                                        {
-                                                            if (value != DBNull.Value)
-                                                            {
-                                                                try
-                                                                {
-                                                                    prop.SetValue(newObject, value, null);
-                                                                }
-                                                                catch (Exception)
-                                                                {
-                                                                    prop.SetValue(newObject, value.ConvertValue(prop), null);
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-
-
-                                                }
-
-
-                                            }
-                                            else
-                                            {
-                                                try
-                                                {
-                                                    if (value != DBNull.Value)
-                                                        accessor[newObject, name] = value;
-                                                }
-                                                catch (Exception e)
+                                                if (!accessor.TrySetValue(result, newObject, column, value))
                                                 {
                                                     TrySetValue(dataCommand, newObject, objectType, name, value);
                                                 }
-
-
-
                                             }
-
+                                            catch (Exception ex)
+                                            {
+                                                TrySetValue(dataCommand, newObject, objectType, name, value);
+                                                throw new ApplicationException("error in manager", ex);
+                                            }
                                         }
                                         else
                                         {
-                                            try
-                                            {
-                                                if (value != DBNull.Value)
-                                                    accessor[newObject, name] = value;
-                                            }
-                                            catch (Exception e)
+                                            if (!accessor.TrySetValue(result, newObject, column, value, name))
                                             {
                                                 TrySetValue(dataCommand, newObject, objectType, name, value);
                                             }
-
-
                                         }
                                     }
                                     else
@@ -761,7 +708,7 @@ namespace Trinity.SqlServer
                                 }
                                 catch (Exception ex)
                                 {
-                                    result.AddError(LogType.Error, string.Format("{1} {0} ", name, dataCommand.TableName), ex);
+                                    result.AddWaring(string.Format("{1} {0} ", name, dataCommand.TableName), ex);
                                 }
                             }
                         }
@@ -883,7 +830,7 @@ namespace Trinity.SqlServer
                 return GetDbProviderFactory("Npgsql.NpgsqlFactory", "Npgsql");
 
 
-           throw new NotSupportedException(string.Format(Resources.UnsupportedProviderFactory, type.ToString()));
+            throw new NotSupportedException(string.Format(Resources.UnsupportedProviderFactory, type.ToString()));
         }
 
         public DbProviderFactory GetDbProviderFactoryBase(string providerName)
@@ -900,7 +847,7 @@ namespace Trinity.SqlServer
             if (providername == "npgsql")
                 return GetDbProviderFactory(DataAccessProviderTypes.PostgreSql);
 
-           throw new NotSupportedException(string.Format("", providerName));
+            throw new NotSupportedException(string.Format("", providerName));
         }
 
         protected override Task<ICommandResult> ExecuteDeleteCommandAsync(SqlModelCommand<T> dataCommand, IDbCommand command)

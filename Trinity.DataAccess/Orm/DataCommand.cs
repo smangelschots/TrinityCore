@@ -897,6 +897,14 @@ namespace Trinity.DataAccess.Orm
                 {
                     list = result.Data.ToList();
                 }
+                else
+                {
+                    LoggingService.SendToLog($"{result.ToString()}", LogType.Warning);
+                }
+            }
+            else
+            {
+                LoggingService.SendToLog($"Result is null", LogType.Warning);
             }
             Manager.Connection.Close();
             Manager.Connection.Dispose();

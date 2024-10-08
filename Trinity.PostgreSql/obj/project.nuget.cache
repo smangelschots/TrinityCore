@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qN8q6eaNaso=",
+  "dgSpecHash": "ABDFc0oLZA4=",
   "success": true,
   "projectFilePath": "H:\\Github\\TrinityCore\\Trinity.PostgreSql\\Trinity.PostgreSql.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\SteveMangelschots\\.nuget\\packages\\fastmember\\1.5.0\\fastmember.1.5.0.nupkg.sha512",
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",

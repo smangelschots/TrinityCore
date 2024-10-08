@@ -50,8 +50,6 @@ namespace Trinity.DataAccess.Logging
         //TODO make with real service website
         public static void SendInfoToLog(string message)
         {
-
-
             SendToLog(LogService.LogName, message, LogType.Information);
         }
         public static void SendWarningToLog(string message)

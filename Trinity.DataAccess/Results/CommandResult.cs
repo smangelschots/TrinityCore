@@ -45,6 +45,12 @@ namespace Trinity.DataAccess.Results
             LoggingService.SendToLog("Datamanager", message, LogType.Information);
         }
 
+        public void AddWaring(string message, Exception ex = null)
+        {
+            this.Messages.Add(message);
+            LoggingService.SendToLog("Datamanager", message + " " + ex.ToString(), LogType.Warning);
+        }
+
 
         public int RecordsAffected { get; set; }
 

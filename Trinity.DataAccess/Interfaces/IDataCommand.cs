@@ -107,7 +107,5 @@ namespace Trinity.DataAccess.Interfaces
 
         void OnCommandExecuted(ModelCommandExecutedEventArgs<T> modelCommandExecutedEventArgs);
 
-
-        //ResultList SaveChanges();
     }
 }

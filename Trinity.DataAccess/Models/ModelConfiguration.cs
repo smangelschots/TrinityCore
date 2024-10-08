@@ -5,6 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using Trinity.DataAccess.Extentions;
 using Trinity.DataAccess.Interfaces;
 using Trinity.DataAccess.Logging;
 using Trinity.DataAccess.Orm;

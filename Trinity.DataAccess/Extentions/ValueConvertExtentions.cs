@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using Trinity.DataAccess.Logging;
 
-namespace Trinity.DataAccess.Orm
+namespace Trinity.DataAccess.Extentions
 {
     public static class ValueConvertExtentions
     {
@@ -50,12 +50,12 @@ namespace Trinity.DataAccess.Orm
                 LoggingService.SendToLog("TryGetDataValue cant convert",
                     name + " " + exception.Message + " " + exception.StackTrace, LogType.Error);
             }
-            return default(T);
+            return default;
         }
 
 
 
-      
+
 
         public static float? ToFloatNullable(object value)
         {
@@ -102,10 +102,10 @@ namespace Trinity.DataAccess.Orm
 
         public static string ToAnsiStringFixedLength(this object value)
         {
-            return ToStringValue(value);
+            return value.ToStringValue();
         }
 
-        public static Int32 ToInt32(this object value)
+        public static int ToInt32(this object value)
         {
             if (value == null || value == DBNull.Value)
             {
@@ -114,8 +114,8 @@ namespace Trinity.DataAccess.Orm
             if (value.ToString() != string.Empty)
             {
 
-                Int32 tempValue = 0;
-                if (Int32.TryParse(value.ToStringValue(), out tempValue))
+                int tempValue = 0;
+                if (int.TryParse(value.ToStringValue(), out tempValue))
                 {
                     return tempValue;
                 }
@@ -123,7 +123,7 @@ namespace Trinity.DataAccess.Orm
             return 0;
         }
 
-        public static Int64 ToInt64(this object value)
+        public static long ToInt64(this object value)
         {
             if (value == null || value == DBNull.Value)
             {
@@ -132,8 +132,8 @@ namespace Trinity.DataAccess.Orm
             if (value.ToString() != string.Empty)
             {
 
-                Int64 tempValue = 0;
-                if (Int64.TryParse(value.ToStringValue(), out tempValue))
+                long tempValue = 0;
+                if (long.TryParse(value.ToStringValue(), out tempValue))
                 {
                     return tempValue;
                 }
@@ -190,7 +190,7 @@ namespace Trinity.DataAccess.Orm
 
         public static bool IsFileLocked(this FileInfo file)
         {
-            FileStream fileStream = (FileStream)null;
+            FileStream fileStream = null;
             try
             {
                 if (!file.IsReadOnly)
@@ -220,12 +220,12 @@ namespace Trinity.DataAccess.Orm
 
         public static string ToAnsiString(this object value)
         {
-            return ToStringValue(value);
+            return value.ToStringValue();
         }
 
         public static string ToStringFixedLength(this object value)
         {
-            return ToStringValue(value);
+            return value.ToStringValue();
         }
 
         public static XmlDocument ToXml(this object value)
@@ -334,7 +334,7 @@ namespace Trinity.DataAccess.Orm
             int.TryParse(time.Substring(2, 2), out min);
             int.TryParse(time.Substring(4, 2), out sec);
 
-            DateTime dtmDateTime = new DateTime(year, month, day, hour, min, sec, System.Globalization.Calendar.CurrentEra);
+            DateTime dtmDateTime = new DateTime(year, month, day, hour, min, sec, Calendar.CurrentEra);
             return dtmDateTime;
         }
 
@@ -513,18 +513,18 @@ namespace Trinity.DataAccess.Orm
                 return null;
             return (byte[])value;
         }
-        public static Byte[] ToBinary(object value)
+        public static byte[] ToBinary(object value)
         {
-            return ToByteArray(value);
+            return value.ToByteArray();
         }
         public static bool ToBoolean(this object value)
         {
-            return ToBool(value);
+            return value.ToBool();
         }
 
         public static decimal ToCurrency(this object value)
         {
-            return ToDecimal(value);
+            return value.ToDecimal();
         }
 
         public static object ToObject(this object value)
@@ -564,7 +564,7 @@ namespace Trinity.DataAccess.Orm
             var result = source;
             Type DestType = typeof(T);
 
-            if ((!(source.GetType() == DestType)) && (DestType != typeof(object)))
+            if (!(source.GetType() == DestType) && DestType != typeof(object))
             {
                 var converter = TypeDescriptor.GetConverter(DestType);
                 result = converter.ConvertFrom(source);
@@ -574,6 +574,9 @@ namespace Trinity.DataAccess.Orm
 
         public static object ConvertValue(this object value, PropertyInfo prop)
         {
+
+            if (prop == null) return value;
+
             var propertyType = prop.PropertyType;
             var underlyingType = Nullable.GetUnderlyingType(propertyType);
             var returnType = underlyingType ?? propertyType;
@@ -586,7 +589,7 @@ namespace Trinity.DataAccess.Orm
                 case TypeCode.Empty:
                     return value;
                 case TypeCode.SByte:
-                    return value.BaseConvert<SByte>();
+                    return value.BaseConvert<sbyte>();
                 case TypeCode.Byte:
                     return value.ToByte();
                 case TypeCode.Boolean:
@@ -714,12 +717,12 @@ namespace Trinity.DataAccess.Orm
         }
         public static DateTime SetHours(this DateTime date, string strHour)
         {
-            date = DateTime.Parse((String.Format("{0} {1}", date.ToShortDateString(), strHour)));
+            date = DateTime.Parse(string.Format("{0} {1}", date.ToShortDateString(), strHour));
             return date;
         }
         public static int ToInt(this bool value)
         {
-            return (value == true) ? 1 : 0;
+            return value == true ? 1 : 0;
         }
         public static string ToHex(this string text)
         {
@@ -762,7 +765,7 @@ namespace Trinity.DataAccess.Orm
         }
         public static string ToCSVstring(this string[] SingleArray)
         {
-            return String.Join(", ", SingleArray);
+            return string.Join(", ", SingleArray);
         }
         static double RoundToSignificantDigits(this double d, int digits)
         {
@@ -771,11 +774,11 @@ namespace Trinity.DataAccess.Orm
         }
         public static double GetPercent(this double value, double max)
         {
-            return ((value * 100) / max);
+            return value * 100 / max;
         }
         public static int GetPercent(this int value, int max)
         {
-            return ((value * 100) / max);
+            return value * 100 / max;
         }
 
         public static List<T> ToList<T>(this object value)

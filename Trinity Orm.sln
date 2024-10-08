@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trinity.SqlServer", "Trinit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trinity.MongoDb", "Trinity.MongoDb\Trinity.MongoDb.csproj", "{DCD42916-8E45-4DCA-83C7-C2F12F6F7B09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trinity.PostgreSql", "Trinity.PostgreSql\Trinity.PostgreSql.csproj", "{97F2C024-B2DE-4B1E-A467-1CDF89777E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trinity.PostgreSql", "Trinity.PostgreSql\Trinity.PostgreSql.csproj", "{97F2C024-B2DE-4B1E-A467-1CDF89777E76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
