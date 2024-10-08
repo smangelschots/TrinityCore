@@ -1,4 +1,4 @@
-using Trinity.DataAccess.LobModels;
+using Trinity.DataAccess.Models;
 
 namespace Trinity.DataAccess.Events
 {

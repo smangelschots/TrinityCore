@@ -13,6 +13,7 @@ using Trinity.DataAccess;
 using Trinity.DataAccess.Events;
 using Trinity.DataAccess.Interfaces;
 using Trinity.DataAccess.Logging;
+using Trinity.DataAccess.Models;
 using Trinity.DataAccess.Orm;
 using Trinity.DataAccess.Results;
 using Westwind.Utilities;

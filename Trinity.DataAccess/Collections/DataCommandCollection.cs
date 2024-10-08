@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Trinity.DataAccess.Events;
 using Trinity.DataAccess.Interfaces;
-using Trinity.DataAccess.Orm;
+using Trinity.DataAccess.Models;
 using Trinity.DataAccess.Results;
 
 namespace Trinity.DataAccess.Collections

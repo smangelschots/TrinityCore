@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Trinity.DataAccess.LobModels;
-using Trinity.DataAccess.Orm;
+using Trinity.DataAccess.Models;
 
 namespace Trinity.Test.Models
 {

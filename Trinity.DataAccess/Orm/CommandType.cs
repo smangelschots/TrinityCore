@@ -1,5 +1,4 @@
-﻿
-namespace TrinityCore
+﻿namespace Trinity.DataAccess.Orm
 {
     public enum DataCommandType
     {

@@ -7,8 +7,9 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using Trinity.DataAccess.Interfaces;
 using Trinity.DataAccess.Logging;
+using Trinity.DataAccess.Orm;
 
-namespace Trinity.DataAccess.Orm
+namespace Trinity.DataAccess.Models
 {
     public abstract class ModelConfiguration
     {
@@ -33,7 +34,7 @@ namespace Trinity.DataAccess.Orm
 
         public StartAddDefaultExpressionsEventArgs(IModelConfiguration modelConfiguration)
         {
-            this.Configuration = modelConfiguration;
+            Configuration = modelConfiguration;
         }
 
         public bool Cancel { get; set; }
@@ -120,7 +121,7 @@ namespace Trinity.DataAccess.Orm
             Validations = new List<ModelValidation>();
             Expressions = new List<RegularExpression>();
             Columns = new List<ColumnConfiguration<T>>();
-            this.MergeWithEntities = new List<Type>();
+            MergeWithEntities = new List<Type>();
             SetDefaultExpressions();
         }
 
@@ -134,7 +135,7 @@ namespace Trinity.DataAccess.Orm
 
         public ModelConfiguration<T> MergeModel<TClass>()
         {
-            this.MergeWithEntities.Add(typeof(TClass));
+            MergeWithEntities.Add(typeof(TClass));
             return this;
         }
 
@@ -149,11 +150,11 @@ namespace Trinity.DataAccess.Orm
 
             foreach (var item in Expressions)
             {
-                this.AddExpression(item.Name, item.Expression, item.Message);
+                AddExpression(item.Name, item.Expression, item.Message);
             }
             foreach (var item in Validations)
             {
-                this.SetValidation(item.Name, item.IsRequired, item.Message, item.RegExpression);
+                SetValidation(item.Name, item.IsRequired, item.Message, item.RegExpression);
             }
         }
 
@@ -163,9 +164,9 @@ namespace Trinity.DataAccess.Orm
 
             OnStartAddDefaultExpressions(arg);
             if (arg.Cancel) return;
-            this.AddExpression(NoDateExpression, @"^(((0?[1-9]|[12]\d|3[01])[\.\-\/](0?[13578]|1[02])[\.\-\/]((1[6-9]|[2-9]\d)?\d{2}))|((0?[1-9]|[12]\d|30)[\.\-\/](0?[13456789]|1[012])[\.\-\/]((1[6-9]|[2-9]\d)?\d{2}))|((0?[1-9]|1\d|2[0-8])[\.\-\/]0?2[\.\-\/]((1[6-9]|[2-9]\d)?\d{2}))|(29[\.\-\/]0?2[\.\-\/]((1[6-9]|[2-9]\d)?(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][2])00)|00)))$", "Geef een geldige datum in.");
-            this.AddExpression(NotNullExpression, "^.+$", "Value may not be empty");
-            this.AddExpression(NotZeroExpression, "^[0-9]*[1-9]+$|^[1-9]+[0-9]*$", "Select a value");
+            AddExpression(NoDateExpression, @"^(((0?[1-9]|[12]\d|3[01])[\.\-\/](0?[13578]|1[02])[\.\-\/]((1[6-9]|[2-9]\d)?\d{2}))|((0?[1-9]|[12]\d|30)[\.\-\/](0?[13456789]|1[012])[\.\-\/]((1[6-9]|[2-9]\d)?\d{2}))|((0?[1-9]|1\d|2[0-8])[\.\-\/]0?2[\.\-\/]((1[6-9]|[2-9]\d)?\d{2}))|(29[\.\-\/]0?2[\.\-\/]((1[6-9]|[2-9]\d)?(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][2])00)|00)))$", "Geef een geldige datum in.");
+            AddExpression(NotNullExpression, "^.+$", "Value may not be empty");
+            AddExpression(NotZeroExpression, "^[0-9]*[1-9]+$|^[1-9]+[0-9]*$", "Select a value");
         }
 
         public void SetModelConfiguration(IModelBase model)
@@ -178,9 +179,9 @@ namespace Trinity.DataAccess.Orm
             {
                 throw new Exception("model is SetModelConfiguration Is NUll");
             }
-            this.Model = model;
+            Model = model;
 
-            this.Model.PropertyChanged -= this.Model_PropertyChanged;
+            Model.PropertyChanged -= Model_PropertyChanged;
             //for (int i = Validations.Count - 1; i >= 0; i--)
             //{
             //    var validation = Validations[i];
@@ -190,16 +191,16 @@ namespace Trinity.DataAccess.Orm
             for (int i = 0; i < Validations.Count; i++)
             {
                 var validation = Validations[i];
-                this.Model.SetColumnError(validation.Name, validation.Message);
+                Model.SetColumnError(validation.Name, validation.Message);
             }
 
-            this.Model.PropertyChanged += this.Model_PropertyChanged;
+            Model.PropertyChanged += Model_PropertyChanged;
 
         }
 
         void Model_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            this.OnValidateProperty(e.PropertyName);
+            OnValidateProperty(e.PropertyName);
         }
 
 
@@ -214,7 +215,7 @@ namespace Trinity.DataAccess.Orm
 
             var validation = Validations.FirstOrDefault(m => m.Name == propertyName);
             if (validation == null) return null;
-            var value = this.GetValue(propertyName);
+            var value = GetValue(propertyName);
 
             var arg = new ModelValidateEventArgs(validation, value);
             OnModelPropertyValidate(arg);
@@ -259,33 +260,33 @@ namespace Trinity.DataAccess.Orm
             OnAfterModelPropertyValidate(arg);
 
             if (arg.Valid)
-                this.RemoveError(validation);
+                RemoveError(validation);
             else
             {
-                this.AddError(validation);
+                AddError(validation);
             }
             return validation;
         }
 
         private void AddError(ModelValidation validation)
         {
-            if (this.Model == null) return;
-            if (this.Model.Errors.ContainsKey(validation.Name) == false)
-                this.Model.Errors.Add(validation.Name, validation.Message);
+            if (Model == null) return;
+            if (Model.Errors.ContainsKey(validation.Name) == false)
+                Model.Errors.Add(validation.Name, validation.Message);
         }
 
         private void RemoveError(ModelValidation validation)
         {
-            if (this.Model == null) return;
-            if (this.Model.Errors.ContainsKey(validation.Name))
+            if (Model == null) return;
+            if (Model.Errors.ContainsKey(validation.Name))
             {
-                this.Model.Errors.Remove(validation.Name);
+                Model.Errors.Remove(validation.Name);
             }
         }
 
         public virtual object GetValue(string propertyName)
         {
-            var model = this.Model as T;
+            var model = Model as T;
 
             if (model != null)
             {
@@ -341,30 +342,30 @@ namespace Trinity.DataAccess.Orm
             string message,
             string regexName)
         {
-            var name = this.GetName(field);
+            var name = GetName(field);
             return SetValidation(name, isRequired, message, regexName);
         }
 
         public ModelConfiguration<T> SetRequired<TField>(Expression<Func<T, TField>> field, string message, string regexName)
         {
-            this.SetValidation(field, true, message, regexName);
+            SetValidation(field, true, message, regexName);
             return this;
         }
         public ModelConfiguration<T> SetRequired<TField>(Expression<Func<T, TField>> field, string message)
         {
-            this.SetRequired(field, message, string.Empty);
+            SetRequired(field, message, string.Empty);
             return this;
         }
 
         public ModelConfiguration<T> SetRequiredString<TField>(Expression<Func<T, TField>> field, string message)
         {
-            this.SetRequired(field, message, NotNullExpression);
+            SetRequired(field, message, NotNullExpression);
             return this;
         }
 
         public ModelConfiguration<T> SetRequiredDate<TField>(Expression<Func<T, TField>> field, string message)
         {
-            this.SetRequired(field, message, NoDateExpression);
+            SetRequired(field, message, NoDateExpression);
             return this;
         }
 

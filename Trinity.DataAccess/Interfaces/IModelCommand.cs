@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Trinity.DataAccess.Orm;
+using Trinity.DataAccess.Models;
 using Trinity.DataAccess.Results;
 
 namespace Trinity.DataAccess.Interfaces

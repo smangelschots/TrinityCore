@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Trinity.DataAccess.Attributes;
 
-namespace Trinity.DataAccess.LobModels
+namespace Trinity.DataAccess.Models
 {
 
     [TableConfiguration("Z_Application")]

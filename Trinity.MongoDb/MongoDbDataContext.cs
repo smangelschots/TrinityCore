@@ -2,7 +2,7 @@
 
 namespace Trinity.MongoDb
 {
-    public class Class1
+    public class MongoDbDataContext
     {
     }
 }

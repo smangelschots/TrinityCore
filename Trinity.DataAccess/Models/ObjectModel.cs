@@ -1,7 +1,7 @@
 ﻿using System;
 using Trinity.DataAccess.Attributes;
 
-namespace Trinity.DataAccess.LobModels
+namespace Trinity.DataAccess.Models
 {
 
     [TableConfiguration("Z_Object")]

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Trinity.DataAccess.LobModels
+namespace Trinity.DataAccess.Models
 {
     public enum ModelEditType
     {

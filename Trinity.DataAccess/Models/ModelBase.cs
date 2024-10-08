@@ -6,7 +6,7 @@ using Trinity.DataAccess.Attributes;
 using Trinity.DataAccess.Events;
 using Trinity.DataAccess.Interfaces;
 
-namespace Trinity.DataAccess.LobModels
+namespace Trinity.DataAccess.Models
 {
     public delegate void EditEventHandler(object sender, EditEventHandlerArgs args);
 
@@ -36,38 +36,38 @@ namespace Trinity.DataAccess.LobModels
 
         protected ModelBase()
         {
-            this.Errors = new Dictionary<string, string>();
-            this.OldValues = new Dictionary<string, object>();
+            Errors = new Dictionary<string, string>();
+            OldValues = new Dictionary<string, object>();
         }
 
         public string this[string columnName]
         {
             get
             {
-                if (this.Errors.ContainsKey(columnName))
-                    return this.Errors[columnName];
+                if (Errors.ContainsKey(columnName))
+                    return Errors[columnName];
                 return string.Empty;
             }
         }
 
         public bool HasErrors()
         {
-            if (this.Errors.Count > 0) return true;
+            if (Errors.Count > 0) return true;
             return false;
         }
 
         public void ClearErrors()
         {
-            this.Errors.Clear();
-            this.RowError = string.Empty;
+            Errors.Clear();
+            RowError = string.Empty;
         }
 
         public virtual void SetColumnError(string columnName, string error)
         {
-            if (this.Errors.ContainsKey(columnName) == false)
-                this.Errors.Add(columnName, error);
+            if (Errors.ContainsKey(columnName) == false)
+                Errors.Add(columnName, error);
             else
-                this.Errors[columnName] = error;
+                Errors[columnName] = error;
         }
 
         [field: NonSerialized]
@@ -81,20 +81,20 @@ namespace Trinity.DataAccess.LobModels
 
 
         [EditorBrowsable(EditorBrowsableState.Advanced)]
-        public virtual void SendPropertyChanged([CallerMemberName]  string propertyName = "")
+        public virtual void SendPropertyChanged([CallerMemberName] string propertyName = "")
         {
-            if (this.PropertyChanged != null)
+            if (PropertyChanged != null)
             {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
 
 
         [EditorBrowsable(EditorBrowsableState.Advanced)]
-        public virtual void SendPropertyChanging([CallerMemberName]  string propertyName = "")
+        public virtual void SendPropertyChanging([CallerMemberName] string propertyName = "")
         {
-            if (this.PropertyChanging != null)
-                this.PropertyChanging(this, new PropertyChangingEventArgs(propertyName));
+            if (PropertyChanging != null)
+                PropertyChanging(this, new PropertyChangingEventArgs(propertyName));
 
         }
 
@@ -105,26 +105,26 @@ namespace Trinity.DataAccess.LobModels
 
         public void BeginEdit()
         {
-            if (this.EditObject != null)
-                this.EditObject(this, new EditEventHandlerArgs(ModelEditType.Begin));
+            if (EditObject != null)
+                EditObject(this, new EditEventHandlerArgs(ModelEditType.Begin));
 
         }
 
         public void EndEdit()
         {
-            if (this.EditObject != null)
-                this.EditObject(this, new EditEventHandlerArgs(ModelEditType.End));
+            if (EditObject != null)
+                EditObject(this, new EditEventHandlerArgs(ModelEditType.End));
         }
 
         public void CancelEdit()
         {
-            if (this.EditObject != null)
-                this.EditObject(this, new EditEventHandlerArgs(ModelEditType.Cancel));
+            if (EditObject != null)
+                EditObject(this, new EditEventHandlerArgs(ModelEditType.Cancel));
         }
 
         public void AcceptChanges()
         {
-            this.OldValues.Clear();
+            OldValues.Clear();
         }
 
         [Bindable(false)]
