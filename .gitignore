@@ -41,5 +41,7 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
-/Nylium.DataManagement/Nylium.DataManagement.csproj
-/Nylium.DataManagment.Test/Nylium.DataManagment.Test.csproj
+/Nylium.DataManagement/
+/Nylium.DataManagment.Test/
+/Trinity Orm - Nylium.sln
+
