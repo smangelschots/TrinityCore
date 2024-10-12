@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "svR57zxvYRU=",
+  "dgSpecHash": "MYb5YdtJw5c=",
   "success": true,
-  "projectFilePath": "H:\\Github\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj",
+  "projectFilePath": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\fastmember\\1.5.0\\fastmember.1.5.0.nupkg.sha512",
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\fastmember.netcore\\1.1.0\\fastmember.netcore.1.1.0.nupkg.sha512",
