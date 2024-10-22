@@ -13,7 +13,7 @@ nupkg/
 
 # Visual Studio
 .vs/
-
+**/.vs/
 # Fleet
 .fleet/
 
@@ -45,3 +45,4 @@ msbuild.wrn
 /Nylium.DataManagment.Test/
 /Trinity Orm - Nylium.sln
 
+/.vs/Trinity Orm/DesignTimeBuild/.dtbcache.v2
