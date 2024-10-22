@@ -50,6 +50,23 @@ namespace Trinity.SqlServer
 
         public void CreateDatabaseIfNotExist()
         {
+            //// function to create database if not exist
+            //if (this.TableMaps == null) { return; }
+            //foreach (var tableMap in this.TableMaps)
+            //{
+            //    var map = tableMap.Value;
+            //    if (map.TableType == "TABLE")
+            //    {
+            //        var sql = string.Format("IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='{0}' and xtype='U') CREATE TABLE {0} (", map.TableName);
+            //        foreach (var column in map.ColumnMaps)
+            //        {
+            //            sql += string.Format("{0} {1},", column.ColumnName, column.);
+            //        }
+            //        sql = sql.TrimEnd(',');
+            //        sql += ")";
+            //        this.Execute(sql);
+            //    }
+            //}
 
         }
 

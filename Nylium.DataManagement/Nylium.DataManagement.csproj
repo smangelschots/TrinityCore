@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\VSXI\Nylium\20.20.000 Customer Modules\Nylium.Module.Raes\Nylium.Module.Raes.csproj" />
+    <ProjectReference Include="..\Trinity.SqlServer\Trinity.SqlServer.csproj" />
+  </ItemGroup>
+
+</Project>

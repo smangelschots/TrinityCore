@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dAWB10TctEc=",
+  "dgSpecHash": "7X1YJupaIBg=",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj",
+  "projectFilePath": "H:\\Github\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\fastmember\\1.5.0\\fastmember.1.5.0.nupkg.sha512",
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\fastmember.netcore\\1.1.0\\fastmember.netcore.1.1.0.nupkg.sha512",

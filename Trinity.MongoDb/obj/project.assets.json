@@ -9,6 +9,8 @@
   },
   "packageFolders": {
     "C:\\Users\\SteveMangelschots\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {},
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages": {},
     "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages": {},
@@ -17,13 +19,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
+      "projectUniqueName": "H:\\Github\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
       "projectName": "Trinity.MongoDb",
-      "projectPath": "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
+      "projectPath": "H:\\Github\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
       "packagesPath": "C:\\Users\\SteveMangelschots\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\obj\\",
+      "outputPath": "H:\\Github\\TrinityCore\\Trinity.MongoDb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
         "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
         "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
@@ -31,6 +35,8 @@
       ],
       "configFilePaths": [
         "C:\\Users\\SteveMangelschots\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
@@ -41,6 +47,8 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},

@@ -21,4 +21,5 @@ namespace Trinity.DataAccess.Interfaces
         string PropertyName { get; set; }
         
     }
+    
 }

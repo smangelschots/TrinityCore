@@ -1,19 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj": {}
+    "H:\\Github\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj": {
+    "H:\\Github\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj",
+        "projectUniqueName": "H:\\Github\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj",
         "projectName": "Trinity.Test",
-        "projectPath": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj",
+        "projectPath": "H:\\Github\\TrinityCore\\Trinity.DataAccess.Test\\Trinity.Test.csproj",
         "packagesPath": "C:\\Users\\SteveMangelschots\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess.Test\\obj\\",
+        "outputPath": "H:\\Github\\TrinityCore\\Trinity.DataAccess.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
@@ -21,6 +23,8 @@
         ],
         "configFilePaths": [
           "C:\\Users\\SteveMangelschots\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
@@ -31,6 +35,8 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
@@ -42,14 +48,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\GitHub\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj": {
-                "projectPath": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj"
+              "H:\\Github\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj": {
+                "projectPath": "H:\\Github\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj"
               },
-              "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj": {
-                "projectPath": "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj"
+              "H:\\Github\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj": {
+                "projectPath": "H:\\Github\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj"
               },
-              "C:\\GitHub\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj": {
-                "projectPath": "C:\\GitHub\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj"
+              "H:\\Github\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj": {
+                "projectPath": "H:\\Github\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj"
               }
             }
           }
@@ -102,16 +108,18 @@
         }
       }
     },
-    "C:\\GitHub\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj": {
+    "H:\\Github\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj",
+        "projectUniqueName": "H:\\Github\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj",
         "projectName": "Trinity.DataAccess",
-        "projectPath": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj",
+        "projectPath": "H:\\Github\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj",
         "packagesPath": "C:\\Users\\SteveMangelschots\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess\\obj\\",
+        "outputPath": "H:\\Github\\TrinityCore\\Trinity.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
@@ -119,6 +127,8 @@
         ],
         "configFilePaths": [
           "C:\\Users\\SteveMangelschots\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
@@ -129,6 +139,8 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
@@ -182,16 +194,18 @@
         }
       }
     },
-    "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj": {
+    "H:\\Github\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
+        "projectUniqueName": "H:\\Github\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
         "projectName": "Trinity.MongoDb",
-        "projectPath": "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
+        "projectPath": "H:\\Github\\TrinityCore\\Trinity.MongoDb\\Trinity.MongoDb.csproj",
         "packagesPath": "C:\\Users\\SteveMangelschots\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\TrinityCore\\Trinity.MongoDb\\obj\\",
+        "outputPath": "H:\\Github\\TrinityCore\\Trinity.MongoDb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
@@ -199,6 +213,8 @@
         ],
         "configFilePaths": [
           "C:\\Users\\SteveMangelschots\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
@@ -209,6 +225,8 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
@@ -256,16 +274,18 @@
         }
       }
     },
-    "C:\\GitHub\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj": {
+    "H:\\Github\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj",
+        "projectUniqueName": "H:\\Github\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj",
         "projectName": "Trinity.SqlServer",
-        "projectPath": "C:\\GitHub\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj",
+        "projectPath": "H:\\Github\\TrinityCore\\Trinity.SqlServer\\Trinity.SqlServer.csproj",
         "packagesPath": "C:\\Users\\SteveMangelschots\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\TrinityCore\\Trinity.SqlServer\\obj\\",
+        "outputPath": "H:\\Github\\TrinityCore\\Trinity.SqlServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
@@ -273,6 +293,8 @@
         ],
         "configFilePaths": [
           "C:\\Users\\SteveMangelschots\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
@@ -283,6 +305,8 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
@@ -294,8 +318,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\GitHub\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj": {
-                "projectPath": "C:\\GitHub\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj"
+              "H:\\Github\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj": {
+                "projectPath": "H:\\Github\\TrinityCore\\Trinity.DataAccess\\Trinity.DataAccess.csproj"
               }
             }
           }
